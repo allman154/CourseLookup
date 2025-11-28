@@ -1,18 +1,12 @@
-## Getting Started
+# Course Day Separator – Java Code Sample
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Description:**  
+Separates university courses into meeting days (Mon/Wed/Fri vs Tue/Thu) using nested loops, switch-case logic, and HashMaps.
 
-## Folder Structure
+**Structure:**
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Model classes (`Course`, `Courses`, `Student`, `Faculty`, `Major`)
+- JDBC/OJDBC-style stubs (non-functional, for demonstration only)
+- Mock data populate methods (functional for demo)
+- `CourseDaySeparator` controller that executes the process to sort courses by meeting days and prints the data
+- Small `App.java` that instantiates the controller
