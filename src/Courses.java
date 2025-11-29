@@ -125,7 +125,7 @@ public class Courses {
         crs.setCourseName("Programming I Lab");
         crs.setCourseNum("140L");
         crs.setCourseType("Lab");
-        crs.setCourseId(012);
+        crs.setCourseId(112);
         crs.getDaysOfTheWeek().add("Monday");
         crs.populateAdditionalCourseData();
         courseList.add(crs);
@@ -134,7 +134,7 @@ public class Courses {
         crs.setCourseName("Calculus I");
         crs.setCourseNum("150");
         crs.setCourseType("Course");
-        crs.setCourseId(034);
+        crs.setCourseId(134);
         crs.getDaysOfTheWeek().add("Monday");
         crs.getDaysOfTheWeek().add("Wednesday");
         crs.getDaysOfTheWeek().add("Friday");
@@ -145,7 +145,7 @@ public class Courses {
         crs.setCourseName("Music Theory I");
         crs.setCourseNum("160A");
         crs.setCourseType("Course");
-        crs.setCourseId(056);
+        crs.setCourseId(156);
         crs.getDaysOfTheWeek().add("Monday");
         crs.getDaysOfTheWeek().add("Friday");
         crs.populateAdditionalCourseData();
@@ -216,7 +216,7 @@ public class Courses {
         crs.setCourseName("Physics I Lab");
         crs.setCourseNum("230L");
         crs.setCourseType("Lab");
-        crs.setCourseId(228);
+        crs.setCourseId(227);
         crs.getDaysOfTheWeek().add("Tuesday");
         crs.getDaysOfTheWeek().add("Thursday");
         crs.getDaysOfTheWeek().add("Friday");

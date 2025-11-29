@@ -28,29 +28,23 @@ public class Course {
     public int populateAdditionalCourseData() {
         int returnCode = 0;
 
-        returnCode = mockPopulateRegisteredStudents(); // mockPopulateRegisteredStudents
+        returnCode = mockPopulateRegisteredStudents(); // demoPopulateRegisteredStudents
         if (returnCode != 0) {
             System.err.println("There was a problem loading the student for course: " + this.courseName);
             return returnCode;
         }
-        returnCode = mockPopulateAssignedFaculty(); // mockPopulateAssignedFaculty
+        returnCode = mockPopulateAssignedFaculty(); // demoPopulateAssignedFaculty
         if (returnCode != 0) {
             System.err
                     .println("There was a problem loading the assigned factuly member for course: " + this.courseName);
             return returnCode;
         }
 
-        returnCode = mockPopulateDaysOfTheWeek(); // mockPopulateDaysOfTheWeek
-        if (returnCode != 0) {
-            System.err.println("There was a problem loading the days of the week for course: " + this.courseName);
-            return returnCode;
-        }
-
-        returnCode = mockPopulateAssignedFaculty(); // mockPopulateDaysOfTheWeek
-        if (returnCode != 0) {
-            System.err.println("There was a problem loading the days of the week for course: " + this.courseName);
-            return returnCode;
-        }
+        // returnCode = mockPopulateDaysOfTheWeek(); // demoPopulateDaysOfTheWeek
+        // if (returnCode != 0) {
+        //     System.err.println("There was a problem loading the days of the week for course: " + this.courseName);
+        //     return returnCode;
+        // }
 
         return returnCode;
     }
@@ -279,7 +273,8 @@ public class Course {
                             + "     'Th', 'Thursday', "
                             + "     'F','Friday', course_days) cdays"
                             + " FROM    courses"
-                            + " WHERE   crs.facultyid = fac.id");
+                            + " WHERE   crs.facultyid = fac.id"
+                            + "         AND course_id = ? ");
             pstmt.setInt(1, this.courseId);
             rset = pstmt.executeQuery();
             while (rset.next()) {

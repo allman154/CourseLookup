@@ -56,8 +56,8 @@ public class Student extends Person {
             rset = pstmt.executeQuery();
             while (rset.next()) {
                 Major mj = new Major();
-                mj.setMajorDesc("major_desc");
-                mj.setMajorCode("major_code");
+                mj.setMajorDesc(rset.getString("major_desc"));
+                mj.setMajorCode(rset.getString("major_code"));
                 majorList.add(mj);
             }
         } // Catch any errors, then close connections etc.

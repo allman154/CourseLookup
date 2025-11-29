@@ -43,7 +43,7 @@ public class Faculty extends Person {
             rset = pstmt.executeQuery();
             while (rset.next()) {
                 department = rset.getString("department");
-                department = rset.getString("office");
+                officeRoomNum  = rset.getString("office");
             }
         } // Catch any errors, then close connections etc.
         catch (SQLException e) {
